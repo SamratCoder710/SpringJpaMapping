@@ -1,4 +1,4 @@
-package com.coder.sanam.entities;
+package com.coder.sanam.entities.bidirectional;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

@@ -3,9 +3,9 @@ package com.coder.sanam.repositories;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.coder.sanam.entities.bidirectional.Passport;
+import com.coder.sanam.entities.unidirectional.House;
 
 @Repository
-public interface PassportRepository extends JpaRepository<Passport,Long> {
+public interface HouseRepository extends JpaRepository<House,Long> {
 
 }
