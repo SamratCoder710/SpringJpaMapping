@@ -22,6 +22,8 @@ public class SpringDataJpa {
 	public static void main(String[] args) {
 		ConfigurableApplicationContext ctx = SpringApplication.run(SpringDataJpa.class, args);
 		//Unidirectional One to Many Mapping
+		
+		/*
 		PersonRepo personRepo = ctx.getBean(PersonRepo.class);
 		PetRepo petRepo = ctx.getBean(PetRepo.class);
 		
@@ -42,6 +44,7 @@ public class SpringDataJpa {
 		person.setPets(pets);
 		
 		personRepo.save(person);
+		*/
 		
 		//Bidirectional one to many mapping
 		UniversityRepo universityRepo = ctx.getBean(UniversityRepo.class);

@@ -16,6 +16,7 @@
   	<module>one-to-one</module>
   	<module>mapped-super-class</module>
   	<module>one-to-many</module>
+  	<module>many-to-many</module>
   </modules>
   
   <dependencies>

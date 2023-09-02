@@ -4,12 +4,11 @@ import java.util.List;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import lombok.AllArgsConstructor;
+import jakarta.persistence.ManyToMany;
+import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -17,18 +16,20 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
-public class University {
+@Table(name = "Course")
+public class Course {
+	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	private String city;
+	private String courseName;
 	
-	private String type;
+	private double fees;
 	
-	@OneToMany(mappedBy = "university",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
-	private List<College> colleges;
-
+	@ManyToMany(mappedBy = "courses",cascade = CascadeType.ALL)
+	private List<Student> studentsEnrolled;
+	
+	
 }
