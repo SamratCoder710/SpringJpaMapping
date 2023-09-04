@@ -28,7 +28,7 @@ public class Course {
 	
 	private double fees;
 	
-	@ManyToMany(mappedBy = "courses",cascade = CascadeType.ALL)
+	@ManyToMany(mappedBy = "courses",cascade = CascadeType.MERGE)
 	private List<Student> studentsEnrolled;
 	
 	

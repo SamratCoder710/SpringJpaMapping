@@ -12,7 +12,6 @@ import com.coder.sanam.entities.bidirectional.Course;
 import com.coder.sanam.entities.bidirectional.Student;
 import com.coder.sanam.entities.unidirectional.Role;
 import com.coder.sanam.entities.unidirectional.User;
-import com.coder.sanam.repositories.CourseRepository;
 import com.coder.sanam.repositories.StudentRepository;
 import com.coder.sanam.repositories.UserRepository;
 
